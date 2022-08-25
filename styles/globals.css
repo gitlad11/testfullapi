@@ -24,3 +24,154 @@ a {
     background: black;
   }
 }
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  position: relative;
+}
+.navbar{
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  min-height: 60px;
+  width: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  align-items: center;
+}
+.users-mini{
+  height: 36px;
+  width: 120px;
+  background-color: rgb(192, 189, 189);
+  border-radius: 9px;
+  justify-content: space-around;
+  display: flex;
+  
+}
+
+.avatar{
+  height: 32px;
+  width: 32px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 4%;
+  border: 1px solid rgb(170, 169, 169);
+  border-radius: 60%;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgb(36, 36, 36);
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.modal-c{
+  min-height: 400px;
+  min-width: 400px;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #fff;
+
+}
+.mod{
+  background-color: rgba(58, 58, 58, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  animation: fadein ease 0.6s;
+}
+.modal-f{
+  height: 100%;
+  min-height: 300px;
+  width: 100%;
+  position: relative;
+}
+.centered{
+  position: absolute;
+  top: 30%;
+  width: 100%;
+}
+.postCard{
+  width: 600px;
+  margin: 4px;
+  position: relative;
+}
+
+.users-lists{
+  animation: fadein ease 0.3s;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 200px;
+  height: 140px;
+  overflow-y: auto;
+  background-color: rgb(233, 232, 232);
+  border-radius: 9px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loading{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: rgb(48, 48, 48);
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 0.3;
+  height: 100vh;
+  width: 100vw;
+
+}
+/* Fade in Animation */
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 360px) {
+  .modal-c{
+    width: 100%;
+    min-width: auto;
+    border-radius: 0px;
+  }
+  
+}
+@media only screen
+and (max-width : 620px) {
+  .postCard{
+    width: 340px;
+  }
+}
+
+

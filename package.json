@@ -9,6 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@apollo/client": "^3.6.9",
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+    "@mui/icons-material": "^5.10.2",
+    "@mui/material": "^5.10.2",
+    "apollo-boost": "^0.4.9",
+    "apollo-link-context": "^1.0.20",
+    "apollo-link-http": "^1.5.17",
+    "bootstrap": "^5.2.0",
+    "graphql": "^15.8.0",
+    "graphql-tag": "^2.12.6",
     "next": "12.2.5",
     "react": "18.2.0",
     "react-dom": "18.2.0"
